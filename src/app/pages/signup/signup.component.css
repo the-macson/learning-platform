@@ -1,0 +1,42 @@
+.card{
+    margin: 0 10%;
+    padding: 10px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+.card-header{
+    background-color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: gray;
+}
+.form div{
+    margin: 0 3rem; 
+}
+input{
+    background-color: rgb(244, 241, 241);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+    border-radius: 1.5rem;
+}
+input:active, input:focus{
+    outline: none;
+    box-shadow: none;
+}
+button{
+    background-color: blue;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 1px solid gray;
+    width: 100%;
+}
+button:hover{
+    background-color: #fff;
+    color: gray;
+    border: 1px solid gray;
+}
