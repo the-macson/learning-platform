@@ -42,7 +42,7 @@ import { SafePipe } from './safe.pipe';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
