@@ -18,3 +18,19 @@ img{
     text-align: left;
     margin: 40px 0px;
 }
+button{
+    margin-top: 1rem;
+    background-color: blue;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 1px solid gray;
+    width: 50%;
+}
+button:hover{
+    background-color: #fff;
+    color: gray;
+    border: 1px solid gray;
+}

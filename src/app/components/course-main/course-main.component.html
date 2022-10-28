@@ -1,13 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-3" *ngFor="let course of courses">
+    <div class="col-4" *ngFor="let course of courses">
       <div class="card" style="border: 0px; padding-bottom: 4px;">
         <div class="card-body">
-          <img [src]= course.imageUrl class="card-img-top" alt="...">
+          <img [src]= course.imageUrl width="350" class="card-img-top" alt="...">
           <h5 class="card-title">{{course.name}}</h5>
-          <p>Rating : {{course.rating}}</p>
+          <!-- <p>Rating : {{course.rating}}</p> -->
           <button class="btn btn-outline-primary btn-sm" (click)="handleCourse(course.id)">Learn</button>
-          <span class="float-end pr-7">Free</span>
         </div>
       </div>
     </div>

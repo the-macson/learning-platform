@@ -1,22 +1,21 @@
-<div *ngFor="let playlist of course.playlist">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    {{playlist.name}}
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <p>{{playlist.videoUrl}}</p>
-                    <iframe width="560" height="315" [src]="playlist.videoUrl | safe" title="YouTube video player"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-8">
+            <h2>{{course.name}}</h2>
+            <p>{{course.description}}</p>
+            <p>Course Duration : {{course.duration}} hours</p>
+            <p>Rating : {{course.rating}}</p>
+        </div>
+        <div class="col-4">
+            <img [src]= course.imageUrl class="card-img-top" alt="...">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div *ngFor="let playlist of course.playlist" class="col-4 pr-2 p">
+            <iframe height="200" width="350" [src]="playlist.videoUrl | safe" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p>{{playlist.name}}</p>
         </div>
     </div>
 </div>
