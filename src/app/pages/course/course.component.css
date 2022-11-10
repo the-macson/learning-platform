@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px){
+    .img{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+    .img{
+        display: none;
+    }   
+}

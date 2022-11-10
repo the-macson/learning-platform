@@ -1,18 +1,18 @@
 <div class="container">
     <div class="row mt-5 mb-5">
-        <div class="col-8">
+        <div class="col-sm-8">
             <h2>{{course.name}}</h2>
             <p>{{course.description}}</p>
             <p>Course Duration : {{course.duration}} hours</p>
             <p>Rating : {{course.rating}}</p>
         </div>
-        <div class="col-4">
+        <div class="col-4 img">
             <img [src]= course.imageUrl class="card-img-top" alt="...">
         </div>
     </div>
     <div class="row mt-5">
-        <div *ngFor="let playlist of course.playlist" class="col-4 pr-2 p">
-            <iframe height="200" width="350" [src]="playlist.videoUrl | safe" title="YouTube video player" frameborder="0"
+        <div *ngFor="let playlist of course.playlist" class="col-sm-4 pr-sm-2">
+            <iframe height="200" width="360" [src]="playlist.videoUrl | safe" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <p>{{playlist.name}}</p>

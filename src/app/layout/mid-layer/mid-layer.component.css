@@ -1,10 +1,6 @@
 h1{
     font-size: 60px;
     font-weight: bold;
-    /* color: #fff; */
-    /* text-align: center; */
-    /* margin-top: 40px;
-    margin-bottom: 40px */
 }
 img{
     width: 100%;
@@ -33,4 +29,24 @@ button:hover{
     background-color: #fff;
     color: gray;
     border: 1px solid gray;
+}
+/* responsive page css */
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+    button{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 30px;
+    }
+    button{
+        width: 100%;
+    }
+    .img{
+        display: none;
+    }
 }

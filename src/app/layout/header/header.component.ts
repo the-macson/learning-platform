@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
       this.toastr.success('Sign Out Successfully');
       this.router.navigate(['/']);
       this.email = null;
+      window.location.reload();
     } catch (error) {
       this.toastr.error("Sign Out Failed");
     }

@@ -15,7 +15,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
@@ -46,6 +46,7 @@ import { SafePipe } from './safe.pipe';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

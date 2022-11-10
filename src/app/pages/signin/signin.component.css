@@ -40,3 +40,6 @@ button:hover{
     color: gray;
     border: 1px solid gray;
 }
+.container{
+    margin-bottom: 8rem;
+}
