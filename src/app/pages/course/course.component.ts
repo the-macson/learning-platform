@@ -17,6 +17,6 @@ export class CourseComponent implements OnInit {
     this.courseService.getCourses().subscribe(data => {
       this.course = data.find((course: any) => course.id == this.id);
     })
-    console.log(this.course);
+    
   }
 }
